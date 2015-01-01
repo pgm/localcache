@@ -15,3 +15,4 @@ STORAGE_PATH="/tmp/cached_files"
 AWS_ACCESS_KEY_ID = '...'
 AWS_SECRET_ACCESS_KEY = '...'
 ```
+The service handled a single url request: "http://localhost:5000/get_local?path=..." where the path argument should be of the form "s3://BUCKET/KEYNAME".  The response will contain a local path to the downloaded file where it was stored under the `STORAGE_PATH` config parameter.
